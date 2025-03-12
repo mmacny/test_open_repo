@@ -1,6 +1,5 @@
 {
     "name": "BBR Airflow Codespace",
-    "image": "ghcr.io/bbrpartners/bbr_docker:latest",
     "features": {
         "ghcr.io/devcontainers/features/github-cli:1": {}
     },
@@ -16,7 +15,6 @@
       "AIRFLOW__CORE__DAGS_FOLDER":"/workspaces/bbr_airflow/airflow/dags"
     },
     "forwardPorts": [8080],
-    "onCreateCommand": "bash /workspaces/bbr_airflow/init.sh",
     "customizations":{
       "vscode": {
         "extensions" :[
