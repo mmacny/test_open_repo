@@ -3,6 +3,7 @@
     "features": {
         "ghcr.io/devcontainers/features/github-cli:1": {}
     },
+    "postCreateCommand": "./.devcontainer/post-create.sh",
     "containerEnv": {
       "AIRFLOW__WEBSERVER__ENABLE_PROXY_FIX": "True",
       "AIRFLOW__WEBSERVER__BASE_URL": "http://localhost:8080",
@@ -20,6 +21,7 @@
         "extensions" :[
         "ms-python.python",
         "mtxr.sqltools",
+        "GitHub.vscode-pull-request-github",
         "mtxr.sqltools-driver-pg",
         "mtxr.sqltools-driver-mssql",
         "ms-azuretools.vscode-docker",
