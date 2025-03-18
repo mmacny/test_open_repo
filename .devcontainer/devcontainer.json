@@ -3,7 +3,7 @@
     "features": {
         "ghcr.io/devcontainers/features/github-cli:1": {}
     },
-    "postCreateCommand": "./.devcontainer/post-create.sh",
+    "postCreateCommand": "./.devcontainer/init.sh",
     "containerEnv": {
       "AIRFLOW__WEBSERVER__ENABLE_PROXY_FIX": "True",
       "AIRFLOW__WEBSERVER__BASE_URL": "http://localhost:8080",
